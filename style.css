@@ -1,0 +1,162 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+height: 100%;
+
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    align-items: center;
+    background-image: 
+    url('https://i.pinimg.com/474x/c9/51/58/c95158bd577542bdede33a32650a4e7d.jpg');
+    background-size: cover;
+}
+.container{
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    /* min-width: 400px;  */
+    max-width: 640px; 
+    padding: 20px;
+    /* margin: auto 20px; */
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+    background-color: #d9dacc;
+    border-radius: 25px;
+    box-shadow: 3px 1px 7px 1px rgb(0 0 0 / 25%);
+}
+
+
+
+/* 상단 컨트롤 버튼 영역 */
+
+.control-btn {
+    padding-bottom: 8px;
+}
+
+.control-btn button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+
+}
+
+.control-btn  #redBtn {
+
+    background-color: red;
+}
+
+.control-btn  #yellowBtn {
+
+    background-color: gold;
+}
+.control-btn  #greenBtn {
+
+    background-color: green;
+}
+
+
+/* 계산기 화면 영역 */
+.display {
+    /* border: 1px solid black; */
+    /* color: red; */
+    margin-bottom: 8px;
+    padding: 16px;
+    /* flex-basis: 100px; */
+
+    text-align: right;
+    font-size: 2rem;
+
+
+    background-color: #6f7d78;
+    border-radius: 8px;
+    box-shadow: inset 3px 1px 7px 1px rgb(0 0 0 / 55%);
+    font-family:'Calculator', sans-serif;
+}
+
+
+
+
+/* 계산기 버튼 영역  */
+.buttons {
+    /* flex-grow: 1; */
+
+    /* border: 1px solid black; */
+    color: blue;
+    padding: 16px 0;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 270px;
+    
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px
+}
+
+
+.buttons button {
+    flex-basis: 25%;
+    aspect-ratio: 1;
+
+
+
+    font-size: 1rem;
+    font-weight: 100;
+    color: #83837f;
+    border-radius: 50%;
+    /* max-width: 80px;
+    max-height: 80px; */
+    aspect-ratio: 1 / 1;
+    border: none;
+
+    background-color: inherit;
+    padding: 5px;
+    /* margin: 10px; */
+    margin-bottom: 8px;
+    box-sizing: border-box; 
+    box-shadow: 3px 1px 7px 1px rgb(0 0 0 / 25%);
+    gap: 10px;
+}
+
+.buttons button.zero {
+    /* flex-basis: 50%; */
+    /* width: 50%; */
+    flex-grow: 1;
+    min-width: 50%;
+    /* gap: 10px; */
+    /* max-width: 160px; */
+    /* max-height: 160px; */
+    aspect-ratio: unset;
+    border-radius: 80px;
+}
+
+
+.buttons button:hover {
+    filter: contrast(0.5);
+    box-shadow: 3px 1px 7px 1px rgba(0, 0, 0, 0.25);}
+
+.buttons button:active {
+    background-color: #c2c4ac;
+    /* color: white; */
+}
